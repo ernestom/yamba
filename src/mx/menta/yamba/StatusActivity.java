@@ -34,6 +34,7 @@ public class StatusActivity extends Activity {
 			@Override
 			public void onClick(View view) {
 				String status = statusText.getText().toString();
+				// TODO: clear the hint
 				Log.d(TAG, "onClick with text: " + status);
 				new PostTask().execute(status);
 			}
